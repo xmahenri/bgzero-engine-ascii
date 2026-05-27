@@ -4,7 +4,7 @@ Real-time ASCII video renderer built with JavaScript and HTML5 Canvas.
 
 🔗 **Live Demo:** https://xmahenri.github.io/bgzero-engine-ascii/
 
-## Features
+## ⚙️ Features
 
 - Real-time ASCII rendering
 - Webcam support
@@ -23,7 +23,7 @@ Real-time ASCII video renderer built with JavaScript and HTML5 Canvas.
 - JavaScript
 - Canvas API
 
-## Future Plans
+## ⌛ Future Plans
 
 - Rendering presets
 - Matrix mode
