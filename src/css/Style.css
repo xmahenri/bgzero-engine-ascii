@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary-1: #ff6600;
+    --color-primary-2: #ff9d00;
+
+    --color-neutral-1: #ffffff;
+    --color-neutral-2: #494949;
+    --color-neutral-3: #1d1d1d;
+    --color-neutral-4: #000000;
+}
+
+body {
+    overflow: hidden;
+    background: var(--color-neutral-4);
+    font-family: Consolas, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-neutral-4);
+}
+
+#video {
+    display: none;
+}
+
+.ui {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    width: min(280px, 90vw);
+    padding: 18px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, .10);
+    border: 1px solid rgba(255, 255, 255, .05);
+    backdrop-filter: blur(14px);
+    color: var(--color-primary-2);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition:
+        transform .3s,
+        opacity .3s;
+    user-select: none;
+}
+
+.ui.hidden {
+    transform: translateX(-120%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggleHud {
+    position: fixed;
+    top: 24px;
+    left: 15px;
+    z-index: 101;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-neutral-1);
+    background: rgba(0, 0, 0, .15);
+    cursor: pointer;
+    font-size: 20px;
+    transition:
+        transform .2s,
+        background .2s;
+}
+
+.toggleHud:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, .01);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary-1);
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background: var(--color-neutral-4);
+    color: var(--color-primary-1);
+    cursor: pointer;
+    transition:
+        transform .2s,
+        background .2s,
+        opacity .2s;
+    font-weight: 700;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: var(--color-neutral-3);
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--color-primary-1);
+}
+
+label {
+    font-size: 12px;
+    opacity: .7;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.info {
+    font-size: 11px;
+    opacity: .5;
+    line-height: 1.6;
+}
+
+.time {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.socialBtn {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .04);
+    color: var(--color-primary-1);
+    text-decoration: none;
+    transition:
+        transform .25s,
+        background .25s,
+        color .25s;
+}
+
+.socialBtn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, .08);
+    color: var(--color-primary-2);
+}
+
+.socialBtn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.credit {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    font-size: 12px;
+    opacity: .4;
+    color: var(--color-neutral-1);
+}

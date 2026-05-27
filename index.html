@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="./src/css/Style.css" />
+
+    <title>BGZero Engine - ASCII</title>
+
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <video id="video" playsinline crossorigin="anonymous"></video>
+
+    <button class="toggleHud" id="toggleHud">
+        ☰
+    </button>
+
+    <div class="ui" id="ui">
+
+        <div class="title">
+            BGZero Engine - ASCII
+        </div>
+
+        <input type="file" id="upload" accept="video/*">
+
+        <button id="webcamBtn">
+            Ativar Webcam
+        </button>
+
+        <button id="playPauseBtn">
+            Pausar Vídeo
+        </button>
+
+        <div>
+            <label>Timeline</label>
+            <input type="range" id="timeline" min="0" max="100" value="0">
+        </div>
+
+        <div class="time" id="timeText">
+            00:00 / 00:00
+        </div>
+
+        <div>
+            <label>Volume</label>
+            <input type="range" id="volume" min="0" max="100" value="100">
+        </div>
+
+        <div>
+            <label>Densidade</label>
+            <input type="range" id="density" min="8" max="17" value="10">
+        </div>
+
+        <div>
+            <label>Tamanho da Fonte</label>
+            <input type="range" id="fontSize" min="6" max="26" value="11">
+        </div>
+
+        <div>
+            <label>Brilho</label>
+            <input type="range" id="brightness" min="50" max="300" value="110">
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/xmahenri" target="_blank" class="socialBtn" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.79 10.77.57.1.78-.25.78-.56v-2.02c-3.17.69-3.84-1.36-3.84-1.36-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.19 1.18a11.1 11.1 0 0 1 5.8 0c2.22-1.49 3.19-1.18 3.19-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.38-2.67 5.35-5.21 5.63.41.35.77 1.03.77 2.08v3.08c0 .31.21.67.79.56 4.52-1.5 7.78-5.75 7.78-10.77C23.25 5.48 18.27.5 12 .5Z" />
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/xmahenri/" target="_blank" class="socialBtn" aria-label="LinkedIn">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.16h.05c.53-1.01 1.84-2.08 3.79-2.08 4.05 0 4.8 2.66 4.8 6.12V24h-4v-7.08c0-1.69-.03-3.87-2.36-3.87-2.37 0-2.73 1.85-2.73 3.75V24h-4V8Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="credit">
+        Marcos Henrique © 2026 BGZero Engine ASCII - Todos os direitos reservados.
+    </div>
+
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>
