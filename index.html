@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
 
     <link rel="stylesheet" href="./src/css/Style.css" />
 
-    <title>BGZero Engine - ASCII</title>
+    <title>
+        BGZero Engine - ASCII
+    </title>
 
 </head>
 <body>
@@ -23,7 +24,6 @@
     </button>
 
     <div class="ui" id="ui">
-
         <div class="title">
             BGZero Engine - ASCII
         </div>
@@ -31,15 +31,18 @@
         <input type="file" id="upload" accept="video/*">
 
         <button id="webcamBtn">
-            Ativar Webcam
+            Enable Webcam
         </button>
 
         <button id="playPauseBtn">
-            Pausar Vídeo
+            Pause Video
         </button>
 
         <div>
-            <label>Timeline</label>
+            <label>
+                Timeline
+            </label>
+
             <input type="range" id="timeline" min="0" max="100" value="0">
         </div>
 
@@ -48,22 +51,69 @@
         </div>
 
         <div>
-            <label>Volume</label>
+            <label>
+                Volume
+            </label>
+
             <input type="range" id="volume" min="0" max="100" value="100">
         </div>
 
+
         <div>
-            <label>Densidade</label>
+            <label>
+                ASCII Mode
+            </label>
+
+            <button id="asciiModeBtn">
+                Mode: Binary
+            </button>
+        </div>
+
+        <div>
+            <label>
+                Color Preset
+            </label>
+
+            <select id="colorMode">
+                <option value="original">
+                    Original
+                </option>
+                <option value="green">
+                    Green
+                </option>
+                <option value="blue">
+                    Blue
+                </option>
+                <option value="red">
+                    Red
+                </option>
+                <option value="pink">
+                    Pink
+                </option>
+            </select>
+        </div>
+
+        <div>
+            <label>
+                Density
+            </label>
+
             <input type="range" id="density" min="8" max="17" value="10">
         </div>
 
         <div>
-            <label>Tamanho da Fonte</label>
+            <label>
+                Font Size
+            </label>
+
             <input type="range" id="fontSize" min="6" max="26" value="11">
         </div>
 
         <div>
-            <label>Brilho</label>
+            <label>
+                Brightness
+            </label>
+
             <input type="range" id="brightness" min="50" max="300" value="110">
         </div>
 
@@ -76,7 +126,6 @@
             </a>
 
             <a href="https://www.linkedin.com/in/xmahenri/" target="_blank" class="socialBtn" aria-label="LinkedIn">
-
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path
                         d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.16h.05c.53-1.01 1.84-2.08 3.79-2.08 4.05 0 4.8 2.66 4.8 6.12V24h-4v-7.08c0-1.69-.03-3.87-2.36-3.87-2.37 0-2.73 1.85-2.73 3.75V24h-4V8Z" />
@@ -86,7 +135,7 @@
     </div>
 
     <div class="credit">
-        Marcos Henrique © 2026 BGZero Engine ASCII - Todos os direitos reservados.
+        Marcos Henrique © 2026 BGZero Engine ASCII - All rights reserved.
     </div>
 
     <script src="./src/js/script.js"></script>
