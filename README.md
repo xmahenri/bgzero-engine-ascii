@@ -7,14 +7,27 @@ Real-time ASCII video renderer built with JavaScript and HTML5 Canvas.
 ## ⚙️ Features
 
 - Real-time ASCII rendering
+- Multiple ASCII visualization modes
+    - Binary Mode
+    - Special Mode
+    - Full Characters Mode
+- Dynamic color presets
+    - Original
+    - Green
+    - Blue Tech
+    - Red
+    - Pink
 - Webcam support
 - Video upload support
-- Audio controls
+- Responsive video scaling
+- Volume controls
 - Timeline controls
-- Custom density system
+- Density adjustment
+- Font size customization
 - Brightness adjustment
-- HUD toggle
+- HUD toggle system
 - Minimal cyberpunk UI
+- Vertical and horizontal video support
 
 ## 💻 Technologies
 
@@ -22,15 +35,6 @@ Real-time ASCII video renderer built with JavaScript and HTML5 Canvas.
 - CSS3
 - JavaScript
 - Canvas API
-
-## ⌛ Future Plans
-
-- Rendering presets
-- Matrix mode
-- CRT filter
-- Neon mode
-- WebGL renderer
-- GPU acceleration
 
 ## 🧑🏻‍💻 Autor
 
